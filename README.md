@@ -1,13 +1,11 @@
-# Gamecube controller to NES adapter firmware
+# Gamecube controller to NES adapter (custom) firmware
 
-This is a project to control our good old NES with a controller that came out 15 years later...
+This is a project to control our good old NES with a controller that came out 15 years later... (for homebrew projects that expect a gcn controller)
 
 ## Features
 
 * Connects directly to a standard NES port.
 * Supports most Gamecube controllers. Tested with normal controllers, with the white japanese imports with very long cable, with the popular Nintendo Wavebird and an Intec wireless controller.
-* Turbo feature. While L is pressed, A and B become turbos.
-* Special mode for Mario Bros. (autorun).
 
 ## Project homepgae
 
@@ -17,6 +15,9 @@ Schematic and additional information are available on the project homepage:
 * French: [Adaptateur manette Gamecube à NES](http://www.raphnet.net/electronique/gc_to_nes/index.php)
 
 ## Release History
+
+* Fork : September 4th, 2024
+  * Begun Fork Development altering input translation into raw input reporting
 
 * October 23, 2016 : Version 1.2
   * Updated gamecube IO code (transplanted from gcn64usb v2.9.2). Fixes some compatibility issues.
@@ -30,36 +31,6 @@ Schematic and additional information are available on the project homepage:
 
 * January 26, 2012 : Version 1.0.
   * Initial release
-
-## Operation
-
-### Button mapping
-
-| NES   |  Gamecube |
-| ------|-----------|
-| A     |   A       |
-| B     |   B       |
-| Start  |  Start   |
-| Select |  Z       |
-| D-Pad  |  D-Pad or main Joystick |
-
-
-### Turbo buttons
-
-When the gamecube controller 'L' shoulder button is held
-down, the A and B buttons become turbos.
-
-
-### Special modes
-
-If 'A' is held when turning on the NES, the 'auto run' mapping is
-enabled. In this mode, the analog stick will press B automatically
-above a certain threshold. Try playing Super Mario in this mode,
-the only button you need to use is Jump!
-
-If 'B' is held when turning on the NES, the gamecube joystick
-will use a lower threshold (i.e. less deflection required to trigger
-the corresponding D-Pad direction).
 
 ### Wiring
 
